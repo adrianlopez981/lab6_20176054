@@ -14,6 +14,8 @@
     <hr/>
     <form form method="post" th:action="@{'/estudiante/save'}" th:object="${usuario}">
 
+        <input type="hidden" th:field="*{id}"/>
+
         <div class="form-group">
             <label for="nombres">Nombres</label>
             <input name="nombres" type="text" class="form-control" id="nombres" th:field="*{nombres}">
